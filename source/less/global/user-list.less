@@ -1,0 +1,40 @@
+.user-list {
+  margin: 0;
+  padding: 0;
+}
+
+.user-list__item {
+  height: 55px;
+  margin: 0 auto;
+}
+
+.user-list__link {
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+  text-transform: uppercase;
+}
+
+@media (min-width: @tablet-width) {
+  .user-list {
+    display: flex;
+    padding: 0;
+  }
+
+  .user-list__item {
+    height: 55px;
+    width: 153px;
+    margin: 0;
+  }
+
+  .user-list__link {
+    color: rgb(0, 0, 0);
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .user-list__item {
+    height: 55px;
+    width: 239px;
+    margin: 0;
+  }
+}
