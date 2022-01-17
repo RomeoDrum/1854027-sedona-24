@@ -1,6 +1,5 @@
 {
   "extends": "stylelint-config-htmlacademy",
-  "ignoreFiles": ["source/css/style.css"],
 
   "rules": {
     "declaration-no-important": true,
