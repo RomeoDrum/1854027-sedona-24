@@ -1,14 +1,10 @@
-
-.page-main {
-  text-align: center;
-}
-
 .intro {
   display: flex;
   flex-direction: column;
   align-items: center;
-  height: min-content;
   text-transform: uppercase;
+  width: 320px;
+  margin: 0;
 }
 
 .intro__images {
@@ -32,4 +28,10 @@
 
 .intro--form {
   background: #ffffff url("../img/catalog-background.jpg") no-repeat center top;
+}
+
+@media (min-width: @tablet-width) {
+  .intro {
+    margin: 0;
+  }
 }

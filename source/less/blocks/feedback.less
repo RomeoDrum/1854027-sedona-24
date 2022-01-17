@@ -1,0 +1,69 @@
+.feedback__forms {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.feedback__title {
+  text-transform: uppercase;
+  margin-top: 36px;
+}
+
+.feedback__text {
+  text-transform: uppercase;
+  margin-bottom: 16px;
+}
+
+@media (min-width: @tablet-width) {
+  .feedback {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .forms {
+    display: grid;
+    grid-template-columns: 324px 324px;
+    grid-template-rows: 290px 253px 235px 240px 58px;
+    align-items: center;
+  }
+
+  .forms__type--impression {
+    grid-column: ~"1/2";
+    grid-row: ~"1/2";
+  }
+
+  .forms__type--person {
+    grid-column: ~"2/3";
+    grid-row: ~"1/2";
+  }
+
+  .forms__type--conracts {
+    grid-column: ~"1/-1";
+    grid-row: ~"2/3";
+  }
+
+  .forms__type--sigh {
+    grid-column: ~"1/-1";
+    grid-row: ~"3/4";
+  }
+
+  .forms__type--emotions {
+    grid-column: ~"1/-1";
+    grid-row: ~"4/5";
+  }
+
+  .forms__type--sigh {
+    grid-column: ~"1/-1";
+    grid-row: ~"3/4";
+  }
+
+  .forms-button {
+    grid-column: ~"1/2";
+    grid-row: ~"5/6";
+  }
+
+  .forms__note {
+    grid-column: ~"2/3";
+    grid-row: ~"5/6";
+  }
+}
