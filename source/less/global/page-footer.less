@@ -1,18 +1,19 @@
 .page-footer {
   text-transform: uppercase;
   text-align: center;
-}
+  display: flex;
+  flex-direction: column;
 
-@media (min-width: @tablet-width) {
-  .page-footer {
-    display: flex;
+  @media (min-width: @tablet-width) {
+    flex-direction: row;
+    padding: 36px 55px;
+    justify-content: space-between;
+  }
+
+  @media (min-width: @desktop-width) {
+    flex-direction: row;
+    padding: 36px 120px;
     justify-content: space-between;
   }
 }
 
-@media (min-width: @desktop-width) {
-  .page-footer {
-    display: flex;
-    justify-content: space-between;
-  }
-}
