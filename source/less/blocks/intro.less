@@ -3,8 +3,9 @@
   flex-direction: column;
   align-items: center;
   text-transform: uppercase;
-  width: 320px;
+  width: 100%;
   margin: 0;
+  min-height: 631px;
 }
 
 .intro__images {
@@ -12,7 +13,28 @@
   flex-direction: column;
   align-items: center;
   background: #ffffff url("../img/index-background.jpg") no-repeat center top;
-  height: min-content;
+  min-height: 389px;
+  width: 100%;
+}
+
+.intro__slogan {
+  min-height: 162px;
+  text-align: center;
+  margin: 30px 17px;
+
+  @media (min-width: @tablet-width) {
+    width: 70%;
+    min-height: 110px;
+    margin-top: 43px;
+    margin-bottom: 53px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 50%;
+    min-height: 110px;
+    margin-top: 55px;
+    margin-bottom: 41px;
+  }
 }
 
 .intro__logo {
@@ -20,6 +42,41 @@
   margin-bottom: 85px;
   margin-left: auto;
   margin-right: auto;
+
+  @media (min-width: @tablet-width) {
+    margin-top: 77px;
+    margin-bottom: 90px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-top: 78px;
+    margin-bottom: 90px;
+  }
+}
+
+.intro__title {
+  font-size: 18px;
+  line-height: 26px;
+  font-weight: 700;
+  margin: 0;
+
+  @media (min-width: @tablet-width) {
+    font-size: 21px;
+    line-height: 26px;
+    font-weight: 700;
+  }
+
+  @media (min-width: @desktop-width) {
+    font-size: 21px;
+    line-height: 26px;
+    font-weight: 700;
+  }
+}
+
+.intro__text {
+  font-size: 14px;
+  line-height: 26px;
+  margin-bottom: 0;
 }
 
 .intro--catalog {
@@ -28,10 +85,6 @@
 
 .intro--form {
   background: #ffffff url("../img/catalog-background.jpg") no-repeat center top;
-}
-
-@media (min-width: @tablet-width) {
-  .intro {
-    margin: 0;
-  }
+  display: flex;
+  flex-direction: column;
 }

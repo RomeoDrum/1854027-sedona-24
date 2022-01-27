@@ -20,20 +20,7 @@
 .gallery__list {
   list-style-type: none;
   display: flex;
-
-  @media (min-width: @tablet-width) {
-    .gallery__list {
-      display: flex;
-      flex-wrap: wrap;
-    }
-  }
-
-  @media (min-width: @desktop-width) {
-    .gallery__list {
-      display: flex;
-      flex-wrap: wrap;
-    }
-  }
+  flex-direction: column;
 }
 
 .gallery__title {
